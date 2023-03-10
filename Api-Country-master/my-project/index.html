@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flags</title>
+  </head>
+  <body class="w-screen bg-dark-me-200 overflow-x-hidden">
+    <nav
+      class="bg-dark-me-400 w-screen flex justify-between items-center p-4 px-12 rounded-b-3xl"
+    >
+      <h1 class="text-dark-me-100 text-2xl font-normal">Where in the world?</h1>
+      <div class="flex justify-center items-center gap-1">
+        <img src="src/icon/night-mode-78.png" alt="" class="w-14" />
+        <h2 class="text-dark-me-100 text-2xl font-normal">Dark Mode</h2>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="p-4 px-12 flex justify-between">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for a country..."
+          class="p-2 bg-dark-me-400 text-dark-me-100 rounded-md w-[35rem]"
+        />
+        <select
+          name="filter"
+          id="filter"
+          class="p-2 bg-dark-me-400 text-dark-me-100 rounded-md w-[10rem]"
+        >
+          <option selected>All</option>
+          <option>Asia</option>
+          <option>Africa</option>
+          <option>Americas</option>
+          <option>Europe</option>
+          <option>Oceania</option>
+        </select>
+      </div>
+      <section>
+        <div
+          class="cards w-full grid gap-20 grid-cols-4 p-8 xsm:grid-cols-2 xxsm:grid-cols-1 lgm:grid-cols-3"
+          id="cards"
+        >
+          <!-- <div
+            class="card w-2/12 bg-dark-me-400 p-2 rounded-md shadow flex flex-col h-[25rem] gap-2"
+          >
+            <img src="src/flag/canada.png" alt="" class="w-full h-32" />
+            <h3 class="text-dark-me-100 font-semibold text-2xl my-6">Canada</h3>
+            <div class="flex gap-10">
+              <h4 class="text-dark-me-100">Country Code:</h4>
+              <p class="text-dark-me-100">+98</p>
+            </div>
+            <div class="flex gap-10">
+              <h4 class="text-dark-me-100">Neighbor:</h4>
+              <p class="text-dark-me-100">Iraq</p>
+            </div>
+            <div class="flex gap-10">
+              <h4 class="text-dark-me-100">Capital:</h4>
+              <p class="text-dark-me-100">America</p>
+            </div>
+            <button class="bg-dark-me-200 rounded-3xl text-dark-me-100">
+              More ...
+            </button>
+          </div> -->
+        </div>
+      </section>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
